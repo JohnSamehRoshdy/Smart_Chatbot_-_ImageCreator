@@ -1,0 +1,214 @@
+.rightSection {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo svg {
+  width: 30px;
+  height: auto;
+}
+
+.logoText {
+  margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nochat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.s1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chatImage {
+  width: 90px;
+  height: auto;
+}
+
+.chatText {
+  margin-top: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+.bottomSection {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messagebar {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(240, 240, 240, 0.8);
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.inputText {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: rgba(240, 240, 240, 0.8);
+  border-radius: 20px 0 0 20px;
+  transition: box-shadow 0.3s;
+}
+
+.inputText:focus {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.sendButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #006880;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  margin: 4px;
+}
+.deleteButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #af0000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: none;
+  margin: 4px;
+}
+
+.sendButtonContainer:hover {
+  background-color: #00506a;
+}
+
+.sendButton {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+/* /////////////////// */
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 70%;
+  width: 100%;
+  overflow-y: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.message svg {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.messageHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.messageSender {
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: large;
+}
+
+.messageContent {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.userMessage {
+  background-color: #006880;
+  color: white;
+}
+
+.botMessage {
+  background-color: #e1f5fe;
+  color: black;
+}
+
+.loadingIndicator {
+  display: flex;
+  align-items: center;
+  background-color: #006880;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.loadingCircle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+}
+.errorWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}

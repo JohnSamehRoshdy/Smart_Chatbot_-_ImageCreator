@@ -1,0 +1,33 @@
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ff4d4f;
+  border-radius: 10px;
+  background-color: #fff3f4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.errorIcon {
+  margin-bottom: 10px;
+}
+
+.errorIcon svg {
+  width: 50px;
+  height: 50px;
+  color: #ff4d4f;
+}
+
+.errorMessage h2 {
+  color: #ff4d4f;
+  margin-bottom: 10px;
+}
+
+.errorMessage p {
+  color: #333;
+  margin: 0;
+}
